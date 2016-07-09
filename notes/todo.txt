@@ -1,0 +1,2 @@
+ - clean up auth constants
+ - cache logging in?

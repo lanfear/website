@@ -1,0 +1,241 @@
+.artists
+{
+    position:absolute;
+    left: 0;
+    top: 200px;
+    width: 30%;
+    z-index: 2;
+    overflow: visible;
+    border: 1px black solid;
+    background-color: white;
+    transition: all 1s ease;
+}
+
+.artists.hidden
+{
+    transform: translate(-100%,0);
+}
+
+.artists-menuctrl
+{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 6%;
+    height: 0px;
+    margin-right: -5%;
+}
+
+.artists-menuctrl .menuctrl-text {
+    background-color: white;
+    padding: 5px;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.artists-item
+{
+    position:relative;
+    padding: 5px;
+    border: 0px black solid;
+    float: left;
+}
+
+.artists-item.selected {
+    font-weight: 700;
+}
+
+.releases
+{
+  /* height should be 232 */
+  max-height: 240px;
+  transition: all 1s ease;
+}
+
+.releases.hidden
+{
+  max-height: 0;
+}
+
+.releases-item
+{
+    position:relative;
+    float: left;
+    padding: 5px;
+    border: 1px black solid;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.releases-item > span
+{
+    display: block;
+}
+
+.releases-item > img
+{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.release-content {
+  padding: 10px;
+}
+
+.release-img {
+  float: left;
+}
+
+.release-tracklist {
+  display: inline-block;
+  float: left;
+  padding-left: 20px;
+}
+
+.release-tracklist-item {
+  border: 1px solid;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* SLIDE VIEWER CSS STYLE EXAMPLE - BASIC */
+.slide-viewer *
+{
+    margin: 0;
+}
+
+.slide-viewer
+{
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background: #DDD;
+    position: relative;
+}
+
+.slide-viewer h1
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-viewer p
+{
+    text-align: center;
+}
+
+.slide-viewer-wrapper
+{
+    width: 100%;
+    max-width: 1024px;
+    height: 1024px;
+}
+
+.slide-menu
+{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;    
+}
+.slide-menu.hidden
+{
+    transform: translate(0,-100%);
+}
+
+.release-menu-play,
+.release-menu-download,
+.slide-menu .slide-next,
+.slide-menu .slide-previous,
+.slide-menu .slide-info
+{
+    display: inline-block;
+    height: 82px;
+    line-height: 92px;
+    width: 72px;
+    vertical-align: middle;
+    font-size: 72px;
+    border: 4px solid;
+    border-radius: 15px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    
+    -webkit-transition: opacity 0.35s ease-in-out;
+    -moz-transition: opacity 0.35s ease-in-out;
+    -ms-transition: opacity 0.35s ease-in-out;
+    -o-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;    
+}
+.release-menu-play:hover,
+.release-menu-download:hover,
+.slide-next:hover,
+.slide-previous:hover,
+.slide-info:hover
+{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.release-menu-download
+{
+  line-height: 80px;
+  transform: rotate(180deg);
+}
+.release-menu-play
+{
+  line-height: 86px;
+  font-size: 48px;
+}
+
+.info-panel
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 2px;
+    vertical-align: middle;
+    border: 4px solid;
+    border-radius: 15px;
+    opacity: 0.4;
+}
+
+
+.slide-info
+{
+}
+
+.slide-info:before { content: '\2139'; }
+
+
+.slide-next
+{
+    /*right: 5px;*/
+    float: right;
+}
+.slide-next:before { content: '\27AA'; }
+
+.slide-previous
+{
+    /*left: 5px;*/
+    float: left;
+    transform: rotate(180deg);
+}
+.slide-previous:before { content: '\27AA'; }
+
+.release-menu-play:before { content: '\25BA'; }
+.release-menu-download:before { content: '\21EE'; }
+
+
+
+
+
+

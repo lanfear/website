@@ -1,0 +1,152 @@
+/* app css stylesheet */
+
+#mainmenu {
+	background: #fff;
+	clear: both;
+	width: 90%;
+	margin-left: 4%;
+	margin-bottom: 4px;
+	list-style: none;
+	color: #333;
+	padding: 20px;
+	overflow: auto;
+	border-radius: 15px;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+#mainmenu .item, .menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.menu-content {
+	color: #333;
+    transition: all 1s ease;
+	max-height: 500px;
+}
+
+.menu-content.hidden {
+	max-height: 0;
+	overflow: hidden;
+}
+
+/* PHOTOS MENU */
+.galleries
+{
+    left: 0;
+    border: 1px black solid;
+    background-color: white;
+    transition: all 1s ease;
+}
+
+.galleries-menuctrl
+{
+	/*
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 6%;
+    height: 0px;
+    margin-right: -5%;
+    */
+}
+
+.galleries-menuctrl .menuctrl-text {
+    background-color: white;
+    padding: 5px;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.galleries-item
+{
+    position:relative;
+    padding: 5px;
+    border: 0px black solid;
+    float: left;
+}
+
+.galleries-item.selected {
+    font-weight: 700;
+}
+
+/* MUSIC MENU */
+
+.artists
+{
+	/*
+    position:absolute;
+    left: 0;
+    top: 200px;
+    width: 30%;
+    z-index: 2;
+    overflow: visible;
+    */
+    border: 1px black solid;
+    background-color: white;
+}
+
+.artists.hidden
+{
+    transform: translate(-100%,0);
+}
+
+.artists-menuctrl
+{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 6%;
+    height: 0px;
+    margin-right: -5%;
+}
+
+.artists-menuctrl .menuctrl-text {
+    background-color: white;
+    padding: 5px;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.artists-item
+{
+    position:relative;
+    padding: 5px;
+    border: 0px black solid;
+    float: left;
+}
+
+.artists-item.selected {
+    font-weight: 700;
+}
+
+/* TV MENU */
+
+/* MOVIES MENU */
